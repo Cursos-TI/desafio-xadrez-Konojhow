@@ -9,7 +9,7 @@ int main() {
     }
     printf("\n");
 
-    // Movimento do Bispo (usando while)
+    // Movimento do Bispo 
     printf("Movimento do Bispo:\n");
     int casas_bispo = 5;
     int i = 0;
@@ -19,7 +19,7 @@ int main() {
     }
     printf("\n");
 
-    // Movimento da Rainha (usando do-while)
+    // Movimento da Rainha 
     printf("Movimento da Rainha:\n");
     int casas_rainha = 8;
     int j = 0;
@@ -28,6 +28,22 @@ int main() {
         j++;
     } while (j < casas_rainha);
     printf("\n");
+
+     // Movimento do Cavalo 
+    printf("Movimento do Cavalo:\n");
+    int cavalo_para_baixo = 2;
+    int cavalo_para_esquerda = 1;
+
+    // Loop para os movimentos para baixo
+    for (int i = 0; i < cavalo_para_baixo; i++) {
+        printf("Baixo\n");
+        // Este loop interno executa apenas na última iteração do loop externo
+        for (int k = 0; i == cavalo_para_baixo - 1 && k < cavalo_para_esquerda; k++) {
+            printf("Esquerda\n");
+        }
+        
+    }
+
 
     return 0;
 }
